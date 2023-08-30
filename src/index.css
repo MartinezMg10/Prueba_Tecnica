@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.info-pokemon {
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 20px;
+}
+
+.ov-btn-slide-left {
+	font-size: 1.2rem;
+	background: #fff; 
+	color: #4ae4dc; 
+	border: 2px solid #4ae4dc; 
+	border-radius: 10px; 
+	position: relative;
+	height: 6vh;
+	width: 12vw;
+	z-index: 1;
+	overflow: hidden;
+	display: inline-block;
+  }
+  .ov-btn-slide-left:hover {
+	color: #fff;
+  }
+  .ov-btn-slide-left::after {
+	content: "";
+	background-image: url("https://card-poke-simple.netlify.app/images/bg-pattern-card.svg");
+	position: absolute;
+	height: 6vh;
+	width: 12vw;
+	z-index: -1;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: -100%;
+	right: 100%;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+  }
+  .ov-btn-slide-left:hover::after {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+  }
+
