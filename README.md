@@ -1,6 +1,6 @@
-# Nombre de tu Aplicación
+# POkedex
 
-Descripción corta de tu increíble aplicación.
+Pueba tecnica.
 
 ## Instalación
 
